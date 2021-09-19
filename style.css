@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    background-image: url("Clouds.jpg");
+    background-size: 300% 300%;
+    padding: 20px;
+    color: #462255;
+    text-align: center;
+}
+
+/* header {
+    background-color: darkcyan;
+    border-radius: 15px;
+} */
+
+#recentSearch {
+    margin-right: 20px;
+}
+
+main>h1 {
+    margin: 30px 0 10px 0;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+button+h1 {
+    margin-top: 30px;
+}
+
+input,
+input:focus,
+.form-control {
+    margin-bottom: 15px;
+    background-color: #9EBDE2;
+    border: none;
+    color: #462255 !important;
+}
+
+::placeholder {
+    color: #eedcd7 !important;
+}
+
+aside {
+    height: 600px;
+    margin: 0px;
+}
+
+main {
+    align-content: flex-start;
+}
+
+#day {
+    border: none;
+    min-height: 275px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: thistle;
+}
+
+#dayUV {
+    width: 25%;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#fiveDayWeather {
+    margin-bottom: 20px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+hr {
+    height: 3px !important;
+    color: slategray;
+    opacity: 1;
+}
+
+#fiveDayWeather>h2 {
+    max-height: 50px;
+    font-weight: 700px !important;
+    font-size: 20px;
+    margin: 0 5px 0 5px;
+}
+
+.card {
+    width: 19%;
+    height: 100%;
+    background-color: thistle;
+    border: none;
+    border-radius: 10px;
+}
+
+.card-title {
+    margin-bottom: 20px;
+}
+
+.input-group-lg {
+    margin: 0px;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:target {
+    background-color: #9cde9f;
+    border-color: thistle;
+    border: none;
+}
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:target {
+    margin: 13px!important;
+    width: 94% i !important;
+    background-color: rgb(158, 189, 226);
+    border: none;
+}
+
+header {
+    background-color: darkcyan;
+    border-radius: 25px;
+    padding: 25px;
+    text-align: center;
+    color: #462255;
+}
+
+ header div {
+    list-style-type: none;
+    color: #8E080B;
+    max-width: 400px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+@media screen and (max-width: 1000px) {
+    #fiveDayWeather {
+        flex-direction: column;
+    }
+    .card {
+        width: 40%;
+        height: 300px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #fiveDayWeather {
+        flex-direction: column;
+    }
+    .card {
+        width: 80%;
+        height: 330px;
+        margin: auto;
+        margin-bottom: 20px;
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+}
