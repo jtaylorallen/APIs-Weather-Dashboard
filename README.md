@@ -38,7 +38,6 @@ The app user is able to type in a city's name they wish to recieve a forecast fo
 
 Contribute
 
-My Cousin Hayden, helped me kinda understand APIs and storage.
 
 Credits
 
