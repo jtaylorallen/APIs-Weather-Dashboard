@@ -10,18 +10,106 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 
-<body class="flex-colum min-100-vh">
-    <header class="hero">
-      <h1 class=""> Weather </h1>
-    </header>
+<body>
+  <nav class="navbar navbar-dark bg-primary">
+    <span class="navbar-brand mb-0 h1 w-100 text-center">Weather Dashboard</span>
+</nav>
+
+<br>
 
 
-    <div class="container">
-      <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-        <div class="col-12">
-          <div class="p-3 border bg-light">Row column</div>
+    <!-- <div class="container"> -->
+      <!-- <aside>
+
+      </aside> -->
+
+      <div class="container">
+        <div class="row">
+            <div class="col-4 border border-dark rounded bg-info">
+                <p class="search-header text-center my-1">Search for a city</p>
+                <br>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Search" aria-label="search-city" aria-describedby="button-search">
+                  <button class="btn bg-success" type="button" id="button-search">Search</button>
+                </div>
+                <form id="prevCites"></form>
+            </div>
+            <div class="col-8">
+                <div class="row mr-0">
+                    <div class="col-12 border border-dark m-3 rounded">
+                        <div class="row">
+                            <div class="col-12">
+                                <span id="city-name" class="city-name align-middle"></span>
+                                <img id="current-pic" src="placeholder" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p id="temperature"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p id="humidity"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p id="wind-speed"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 d-flex">
+                                <p id="UV-index"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h3>5-Day Forecast</h3>
+                    </div>
+                </div>
+                <div class="row row-cols-2 row-cols-lg-5 g-1 g-lg-3">
+                  <div class="col fforecast">
+                    <div class="p-1 text-center border border-dark bg-info">Row column</div>
+                  </div>
+                  <div class="col fforecast">
+                    <div class="p-1 text-center border border-dark bg-info">Row column</div>
+                  </div>
+                  <div class="col fforecast">
+                    <div class="p-1 text-center border border-dark bg-info">Row column</div>
+                  </div>
+                  <div class="col fforecast">
+                    <div class="p-1 text-center border border-dark bg-info">Row column</div>
+                  </div>
+                  <div class="co fforecast">
+                    <div class="p-1 text-center border border-dark bg-info">Row column</div>
+                  </div>
+                </div>
+            </div>
         </div>
-        <div class="col">
+    </div>
+      
+
+
+
+
+
+
+
+
+
+
+
+      <!-- <div>
+
+      </div>
+      <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+        <!-- <div class="col-12">
+          <div class="p-3 border bg-light">Row column</div>
+        </div> -->
+        <!-- <div class="col">
           <div class="p-3 border bg-light">Row column</div>
         </div>
         <div class="col">
@@ -37,7 +125,7 @@
           <div class="p-3 border bg-light">Row column</div>
         </div>
       </div>
-    </div>
+    </div>  -->
 
 
 
